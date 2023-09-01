@@ -11,7 +11,7 @@ public class Main {
         } catch (CartException e) {
             e.printStackTrace();
         } catch (CustomerException a) {
-            a.getStackTrace();
+            System.out.println( a.getMessage());
         }
 
 
