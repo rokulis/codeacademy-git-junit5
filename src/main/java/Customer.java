@@ -1,6 +1,7 @@
 public class Customer {
     String name;
     String email;
+
     public String getName() {
         return name;
     }
@@ -19,10 +20,7 @@ public class Customer {
 
 
     Customer(String name, String email) throws CustomerException {
-        if (name == null) {
-            throw new CustomerException("Klaida: eilute tuscia");
-        }
-        if (name == null) {
+        if (name == null || email == null || name == ""|| email == "") {
             throw new CustomerException("Klaida: eilute tuscia");
         }
 

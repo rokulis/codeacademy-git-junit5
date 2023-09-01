@@ -15,7 +15,7 @@ public class Main {
 
 
         try {
-            Customer klientas = new Customer(null, "sim@gmail.com");
+            Customer klientas = new Customer("", "sim@gmail.com");
         } catch (CustomerException e) {
             System.out.println(e.getMessage());
         }
