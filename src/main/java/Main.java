@@ -12,5 +12,14 @@ public class Main {
         }
 
         System.out.println("Total price: " + cart.calculateTotal());
+
+
+        try {
+            Customer klientas = new Customer("", "sim@gmail.com");
+        } catch (CustomerException e) {
+            System.out.println(e.getMessage());
+        }
     }
+
+
 }
