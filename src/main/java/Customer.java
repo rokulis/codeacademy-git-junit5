@@ -1,7 +1,6 @@
 public class Customer {
     String name;
     String email;
-
     public String getName() {
         return name;
     }
