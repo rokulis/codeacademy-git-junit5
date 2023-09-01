@@ -1,4 +1,7 @@
 public class Customer {
+    String name;
+    String email;
+
     public String getName() {
         return name;
     }
@@ -15,15 +18,12 @@ public class Customer {
         this.email = email;
     }
 
-    String name;
-    String email;
+
     Customer(String name, String email) throws CustomerException {
-        if (name == null)
-        {
+        if (name == null) {
             throw new CustomerException("Klaida: eilute tuscia");
         }
-        if (name == null)
-        {
+        if (name == null) {
             throw new CustomerException("Klaida: eilute tuscia");
         }
 
