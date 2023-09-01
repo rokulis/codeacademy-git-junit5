@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CustomerException {
         Cart cart = new Cart();
         Product p1 = new Product("Apple", 1.2);
         Product p2 = new Product("Orange", 0.8);
@@ -12,5 +12,14 @@ public class Main {
         }
 
         System.out.println("Total price: " + cart.calculateTotal());
+
+
+        try {
+            Customer klientas = new Customer(null, "sim@gmail.com");
+        }catch (CustomerException e) {
+            System.out.println(e.getMessage());
+        }
     }
+
+
 }
