@@ -7,10 +7,15 @@ public class Main {
         try {
             cart.addProduct(p1);
             cart.addProduct(p2);
+            Customer c1 = new Customer(null, "");
         } catch (CartException e) {
             e.printStackTrace();
+        } catch (CustomerException a) {
+            System.out.println( a.getMessage());
         }
+
 
         System.out.println("Total price: " + cart.calculateTotal());
     }
 }
+
